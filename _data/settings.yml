@@ -7,7 +7,7 @@ disqus:
 google-ID: 'UA-112060364-2'
 
 menu:
-- {name: 'The World',  url: 'https://eadwyn.com/the-world'}
+- {name: 'The World',  url: 'the-world'}
 - {name: 'Journey', url: 'journey'}
 - {name: 'Map',       url: 'sample-posts'}
 - {name: 'Archives',      url: 'documentation'}
