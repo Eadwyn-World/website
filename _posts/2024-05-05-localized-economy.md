@@ -2,7 +2,7 @@
 layout: post
 title: "Localized Economy"
 author: "Eadwyn"
-categories: resources
+categories: archives
 tags: [journey]
 image: localized-economy.png
 ---

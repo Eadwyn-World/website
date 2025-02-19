@@ -2,7 +2,7 @@
 layout: post
 title: "Catalyst Pods"
 author: "Eadwyn"
-categories: facts
+categories: archives
 tags: [journey]
 image: catalyst-pods.png
 ---

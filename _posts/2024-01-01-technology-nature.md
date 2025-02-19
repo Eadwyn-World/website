@@ -2,7 +2,7 @@
 layout: post
 title: "Integration of Technology and Nature"
 author: "Eadwyn"
-categories: documentation
+categories: archives
 tags: [journey]
 image: technology-nature.png
 ---
