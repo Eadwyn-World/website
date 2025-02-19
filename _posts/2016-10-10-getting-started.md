@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Getting Started"
-author: "Paul Le"
+title: "Growth and Discovery"
+author: "Eadwyn"
 categories: documentation
 tags: [documentation,sample]
-image: city-1.jpg
+image: Growth-Discovery.png
 ---
 
 # Millennial
