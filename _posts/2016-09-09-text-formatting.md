@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Text Formatting"
-author: "Paul Le"
+title: "The World"
+author: "Eadwyn"
 categories: sample
 tags: [sample]
-image: arctic-1.jpg
+image: The-World.png
 ---
 
 # Markdown Support
