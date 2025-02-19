@@ -1,6 +1,5 @@
 ---
-layout: category
-title: Interesting Facts
-category: archives
+layout: page
+title: Archives
 permalink: /archives
 ---

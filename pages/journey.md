@@ -1,6 +1,5 @@
 ---
-layout: category
-title: Sample Posts
-category: sample
+layout: page
+title: Journey
 permalink: /journey
 ---
