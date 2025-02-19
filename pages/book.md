@@ -28,7 +28,3 @@ The narrative closes with a reflective question: How do we live sustainably in a
 - **Participatory Governance**: Collaborative decision-making rooted in equity.
 
 This hopeful, evolving vision offers no final answers but a path forward—where resilience, collaboration, and stewardship guide humanity through an uncertain future.
-
----
-
-*This summary condenses the essence of the world-building, Eadwyn’s arc, and the book’s philosophical core. For a deeper dive, specific sections or themes can be expanded upon request!*
