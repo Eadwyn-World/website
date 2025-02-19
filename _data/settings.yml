@@ -9,8 +9,8 @@ google-ID: 'UA-112060364-2'
 menu:
 - {name: 'The World',  url: 'world'}
 - {name: 'Journey', url: 'journey'}
-- {name: 'Map',       url: 'map'}
-- {name: 'Archives',      url: 'archives'}
+- {name: 'Map',       url: 'sample-posts'}
+- {name: 'Archives',      url: 'documentation'}
 - {name: 'The Book',      url: 'book'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
