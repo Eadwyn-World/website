@@ -2,9 +2,8 @@
 layout: page
 title: The Book
 permalink: /book
+image: the-book.png
 ---
-
-![Eadwyn's World](https://example.com/eadwyn-image.jpg)
 
 ### Summary of *The World of Eadwyn* by Guillaume Lauzier
 
