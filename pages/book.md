@@ -5,6 +5,8 @@ permalink: /book
 image: the-book.png
 ---
 
+![Eadwyn's World](https://eadwyn.com/assets/img/the-book.png)
+
 ### Summary of *The World of Eadwyn* by Guillaume Lauzier
 
 *The World of Eadwyn* presents a speculative vision of a future where nature, technology, and society are intricately interwoven to create a sustainable, decentralized world. In this setting, architecture breathes with living materials, streets adapt to environmental needs, and energy flows from renewable sources integrated into the ecosystem. The story centers on Eadwyn, a contemplative innovator shaped by a past of displacement and exclusion, who drives a quiet revolution toward a harmonious, equitable society.
