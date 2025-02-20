@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Interesting Facts
+title: Journey
 category: facts
-permalink: /facts
+permalink: /journey
 ---
