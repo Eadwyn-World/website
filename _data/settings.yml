@@ -9,7 +9,7 @@ google-ID: 'UA-112060364-2'
 menu:
 - {name: 'The World',  url: 'the-world'}
 - {name: 'Journey', url: 'journey'}
-- {name: 'Map',       url: 'sample-posts'}
+- {name: 'Map',       url: 'map'}
 - {name: 'Archives',      url: 'archives'}
 - {name: 'The Book',      url: 'book'}
 
