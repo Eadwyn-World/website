@@ -2,7 +2,7 @@
 layout: page
 title: $EAD
 permalink: /ead
-image:
+image: ead.png
 ---
 ### *The Currency of Regeneration*
 
