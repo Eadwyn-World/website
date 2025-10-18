@@ -27,7 +27,7 @@ Its mission: to build a regenerative economy inspired by Eadwyn’s decentralize
 
 ## The Ecosystem
 
-### 1. **Catalysts — The Collectible Avatars**
+### **Catalysts — The Collectible Avatars**
 Own and evolve your **Catalyst**, a sci-fi character born from the living fabric of Eadwyn.
 
 - Upgrade traits by staking EAD  
@@ -38,7 +38,7 @@ Each Catalyst is a **living NFT**, adapting to your actions and connection to th
 
 ---
 
-### 2. **Tech Seeds & BioMaterials**
+### **Tech Seeds & BioMaterials**
 Collect **Tech Seeds**, **BioMaterials**, and **Energy Nodes** — digital artifacts representing regenerative materials and technologies from the Eadwyn world.  
 
 - Combine them to create inventions  
@@ -49,7 +49,7 @@ Every discovery contributes to the shared world of regeneration.
 
 ---
 
-### 3. **Regenerative Staking**
+### **Regenerative Staking**
 Stake your EAD to restore harmony.  
 
 The **World Balance Meter** tracks the health of the ecosystem.  
@@ -60,7 +60,7 @@ When imbalance rises, the network self-corrects — burning, redistributing, or 
 
 ---
 
-### 4. **Council of Resonance – DAO Governance**
+### **Council of Resonance – DAO Governance**
 Holders of EAD form the **Council of Resonance**, guiding the evolution of the Eadwyn universe.
 
 The Council votes on:
