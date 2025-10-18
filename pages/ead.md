@@ -145,9 +145,9 @@ EAD memes fuse living architecture, bioluminescent energy, and playful futurism 
 
 🌿 **Website:** [www.Eadwyn.com](#)  
 💬 **Discord:** *The Garden of Resonance*  
-🐦 **Twitter / X:** [@EadwynCoin](#)  
+🐦 **Twitter / X:** [@EadwynWorld](#)  
 🪙 **Token Launch:** Q1 2026  
-⚡ **Chain:** Ethereum (Layer-2 eco bridge)
+⚡ **Chain:** Solana – ultra-efficient, eco-friendly, and built for speed
 
 > “EAD is not about speculation — it’s about regeneration.”
 
