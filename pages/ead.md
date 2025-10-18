@@ -4,22 +4,18 @@ title: $EAD
 permalink: /ead
 image:
 ---
-
-# 🌍 EAD – The Eadwyn Coin  
 ### *The Currency of Regeneration*
 
 ---
 
-## 🪐 Introduction
-
-Welcome to **EAD**, the living currency born from the *World of Eadwyn* — a universe where nature and technology grow together.  
+**EAD**, the living currency born from the *World of Eadwyn* — a universe where nature and technology grow together.  
 Here, every token breathes. Every trade regenerates. Every holder becomes a **Catalyst**, shaping the next evolution of civilization.
 
 EAD isn’t just a meme coin — it’s a **movement** of creators, architects, and innovators turning digital energy into a force for renewal.
 
 ---
 
-## 🌱 The Vision  
+## The Vision  
 ### *Grow. Regenerate. Evolve.*
 
 EAD represents the **flow of balance** between creation and consumption.  
@@ -29,7 +25,7 @@ Its mission: to build a regenerative economy inspired by Eadwyn’s decentralize
 
 ---
 
-## 💎 The Ecosystem
+## The Ecosystem
 
 ### 1. **Catalysts — The Collectible Avatars**
 Own and evolve your **Catalyst**, a sci-fi character born from the living fabric of Eadwyn.
@@ -76,7 +72,7 @@ This DAO turns world-building into governance — and governance into art.
 
 ---
 
-## ⚙️ Tokenomics
+## Tokenomics
 
 | Element | Description |
 |----------|-------------|
@@ -90,7 +86,7 @@ This DAO turns world-building into governance — and governance into art.
 
 ---
 
-## 🌿 Catalyst Pods  
+## Catalyst Pods  
 ### *From Fiction to Function.*
 
 Inspired by *Eadwyn World*, **Catalyst Pods** are modular hubs — physical or digital — where innovation meets regeneration.  
@@ -101,7 +97,7 @@ Own a Pod NFT to sponsor innovation or open one in your city.
 
 ---
 
-## 💫 Meme Culture  
+## Meme Culture  
 ### *“The Future is Growing.”*
 
 EAD blends **eco-aesthetic art** with **crypto humor** — rooted in regeneration rather than speculation.  
@@ -117,7 +113,7 @@ EAD memes fuse living architecture, bioluminescent energy, and playful futurism 
 
 ---
 
-## 🌐 Roadmap
+## Roadmap
 
 ### **Phase I – Genesis Launch**
 - Release of EAD Token  
@@ -141,19 +137,19 @@ EAD memes fuse living architecture, bioluminescent energy, and playful futurism 
 
 ---
 
-## 🧬 Join the Regeneration
+## Join the Regeneration
 
-🌿 **Website:** [www.Eadwyn.com](#)  
-💬 **Discord:** *The Garden of Resonance*  
-🐦 **Twitter / X:** [@EadwynWorld](#)  
-🪙 **Token Launch:** Q1 2026  
-⚡ **Chain:** Solana – ultra-efficient, eco-friendly, and built for speed
+**Website:** [www.Eadwyn.com](#)  
+**Discord:** *The Garden of Resonance*  
+**Twitter / X:** [@EadwynWorld](#)  
+**Token Launch:** Q1 2026  
+**Chain:** Solana – ultra-efficient, eco-friendly, and built for speed
 
 > “EAD is not about speculation — it’s about regeneration.”
 
 ---
 
-## 🎨 Design Aesthetic
+## Design Aesthetic
 
 - **Theme:** Bio-digital symbiosis — where moss meets machine  
 - **Palette:** Emerald green, glowing cyan, deep charcoal  
@@ -164,6 +160,6 @@ EAD memes fuse living architecture, bioluminescent energy, and playful futurism 
 
 ---
 
-### 🌾 The Future Is Growing  
+### The Future Is Growing  
 Be part of a world where technology breathes, architecture lives, and currency regenerates.  
 Welcome to **EAD — The Eadwyn Coin.**
