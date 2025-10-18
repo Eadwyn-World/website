@@ -8,7 +8,7 @@ image:
 
 ---
 
-**EAD**, the living currency born from the *World of Eadwyn* — a universe where nature and technology grow together.  
+**EAD** (Eadwyn Autonomous Domain), the living currency born from the *World of Eadwyn* — a universe where nature and technology grow together.  
 Here, every token breathes. Every trade regenerates. Every holder becomes a **Catalyst**, shaping the next evolution of civilization.
 
 EAD isn’t just a meme coin — it’s a **movement** of creators, architects, and innovators turning digital energy into a force for renewal.
