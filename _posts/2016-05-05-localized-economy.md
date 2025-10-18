@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Localized Economy"
-author: "Paul Le"
+author: "Eadwyn"
 categories: resources
 tags: [documentation,sample]
 image: Localized-Economy.png

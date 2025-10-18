@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Catalyst Pods"
-author: "Paul Le"
-categories: facts
+author: "Eadwyn"
+categories: documentation
 tags: [sample]
 image: Catalyst-Pods.png
 ---
