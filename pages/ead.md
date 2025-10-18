@@ -4,6 +4,9 @@ title: $EAD
 permalink: /ead
 image: ead.png
 ---
+
+![Eadwyn's World](https://eadwyn.com/assets/img/ead.png)
+
 ### *The Currency of Regeneration*
 
 ---
