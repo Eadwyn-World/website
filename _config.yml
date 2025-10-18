@@ -11,7 +11,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "The World of Eadwyn"
-description:	       ""
+description:	       "Eadwyn is a visionary world where nature, technology, and humanity evolve as one. Explore the fusion of regenerative design, decentralized systems, and storytelling that reimagines how we live, build, and connect — from living architecture to the EAD Coin, the currency of regeneration."
 author:              "Eadwyn"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
