@@ -8,6 +8,7 @@ google-ID: 'UA-112060364-2'
 
 menu:
 - {name: 'The World',  url: 'the-world'}
+- {name: '$EAD', url: 'ead'}
 - {name: 'Journey', url: 'journey'}
 - {name: 'Map',       url: 'map'}
 - {name: 'Archives',      url: 'archives'}
