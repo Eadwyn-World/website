@@ -100,22 +100,6 @@ Own a Pod NFT to sponsor innovation or open one in your city.
 
 ---
 
-## Meme Culture  
-### *“The Future is Growing.”*
-
-EAD blends **eco-aesthetic art** with **crypto humor** — rooted in regeneration rather than speculation.  
-No rockets. Just roots 🌱.
-
-**Community Memes:**
-- “Every Coin Breathes 💨”  
-- “Buy EAD, Plant the Future 🌾”  
-- “Stake. Sprout. Repeat.”  
-- “To the Roots, Not to the Moon.”  
-
-EAD memes fuse living architecture, bioluminescent energy, and playful futurism — visualizing growth as culture.
-
----
-
 ## Roadmap
 
 ### **Phase I – Genesis Launch**
