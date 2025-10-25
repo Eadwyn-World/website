@@ -20,7 +20,7 @@ EAD isn’t just a coin — it’s a **movement** of creators, architects, and i
 
 ## EAD as an Eco Coin
 
-EAD (Eadwyn Autonomous Domain) is a pioneering eco coin focused on environmental regeneration. Unlike energy-intensive proof-of-work cryptocurrencies, EAD uses Solana's efficient proof-of-stake to minimize carbon footprints. It offsets emissions via partnerships in reforestation, renewable energy, and real-world sustainability through Catalyst Pods. Holders earn rewards from staking, trading, and green contributions, with transaction fees supporting eco-projects, grants, and NGOs. EAD bridges blockchain with global regeneration goals, attracting eco-conscious investors and building a "green crypto" ecosystem that aligns finance with planetary health—turning every trade into renewal in the World of Eadwyn.
+EAD (Eadwyn Autonomous Domain) is a pioneering eco coin focused on environmental regeneration. Unlike energy-intensive proof-of-work cryptocurrencies, EAD uses Solana's efficient proof-of-stake to minimize carbon footprints. It offsets emissions via partnerships in reforestation, biodiversity protection, renewable energy, and real-world sustainability through Catalyst Pods. Holders earn rewards from staking, trading, and green contributions, with transaction fees supporting eco-projects, grants, and NGOs. EAD bridges blockchain with global regeneration goals, attracting eco-conscious investors and building a "green crypto" ecosystem that aligns finance with planetary health—turning every trade into renewal in the World of Eadwyn.
 
 ---
 
