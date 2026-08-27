@@ -1,0 +1,166 @@
+/*
+  Shared organic UI components: buttons, cards, tags, dividers, section rhythm
+*/
+
+.section {
+  max-width: $container-width - 40px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+}
+.section--tight {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.section-eyebrow {
+  display: inline-block;
+  font-family: $body-font-family;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-clay;
+  margin-bottom: 0.75rem;
+}
+.section-heading {
+  max-width: 42rem;
+  margin-bottom: 2.5rem;
+}
+.section-heading p {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Leaf-vein divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem auto;
+  max-width: $container-width - 40px;
+  padding: 0 1.25rem;
+  color: $color-bark;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, $color-mist, transparent);
+}
+.divider svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: $color-moss;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: $body-font-family;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  background: $color-moss-dark;
+  color: $color-paper;
+}
+.btn-primary:hover {
+  background: $color-moss;
+  color: $color-paper;
+}
+.btn-ghost {
+  background: transparent;
+  color: $color-moss-dark;
+  border-color: $color-bark;
+}
+.btn-ghost:hover {
+  border-color: $color-moss-dark;
+  color: $color-moss-dark;
+  background: rgba($color-moss, 0.08);
+}
+
+/* Tags / chips */
+.tag {
+  display: inline-block;
+  font-family: $body-font-family;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-moss-dark;
+  background: $color-moss-pale;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $color-paper-dim;
+  border: 1px solid $color-mist;
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.card:hover {
+  border-color: $color-bark;
+  transform: translateY(-3px);
+}
+.card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+.card p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+.card .btn,
+.card-link {
+  align-self: flex-start;
+  font-family: $body-font-family;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: $color-clay;
+}
+.card-link::after {
+  content: " →";
+}
+
+/* Pull quote used across lore/story pages */
+.pull-quote {
+  font-family: $display-font-family;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: $color-moss-dark;
+  border-left: 3px solid $color-clay;
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: $tablet-width) {
+  .section {
+    padding: 2.5rem 1.25rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+}

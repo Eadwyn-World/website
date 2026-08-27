@@ -1,0 +1,52 @@
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  max-width: $container-width - 40px;
+  margin: 0 auto;
+  padding: 0 1.25rem 5rem;
+}
+.archive-card {
+  display: block;
+  background: $color-paper-dim;
+  border: 1px solid $color-mist;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.archive-card:hover {
+  border-color: $color-bark;
+  transform: translateY(-3px);
+}
+.archive-card-image {
+  height: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-moss-pale;
+}
+.archive-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.archive-card-tag {
+  display: inline-block;
+  font-family: $body-font-family;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-clay;
+  margin-bottom: 0.5rem;
+}
+.archive-card h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: $color-moss-dark;
+}
+.archive-card-excerpt {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: $color-ink-soft;
+  line-height: 1.55;
+}

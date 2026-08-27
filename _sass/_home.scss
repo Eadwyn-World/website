@@ -1,56 +1,29 @@
-.featured-post {
-  height: 400px;
-  margin: 5px 10px 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.featured-post h2 {
-  bottom: 0;
-  margin: 0;
-  padding: 10px;
-  position: absolute;
-}
-.featured-post h2 span {
-  display: inline-block;
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-.featured-post span a {
-  color: white;
-}
-.featured-post h1 {
-  margin: 10px;
-}
-
 /*
-  Pagination
+  Home page sections: waypoint cards + latest-from-the-archive strip
 */
 
-.pagination {
+.waypoint-card {
+  position: relative;
+}
+.waypoint-card .tag {
+  margin-bottom: 0.85rem;
+}
+
+.archive-strip {
+  background: $color-moss-pale;
+  border-top: 1px solid $color-mist;
+  border-bottom: 1px solid $color-mist;
+}
+
+.home-cta {
   text-align: center;
+  padding: 5rem 1.25rem;
 }
-.pagination a {
-  text-decoration: none;
+.home-cta h2 {
+  margin-top: 0;
 }
-.pagination-button {
-  color: #999;
-  border: 1px solid #e0e0e0;
-  padding: 15px 45px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-.pagination-active {
-  color: black;
-}
-.pagination-active:hover {
-  background-color: #e0e0e0;
+.home-cta p {
+  max-width: 34rem;
+  margin: 0.75rem auto 2rem;
+  font-size: 1.05rem;
 }

@@ -3,20 +3,93 @@ layout: default
 title: Home
 ---
 
-{% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% endfor %}
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">A Speculative World</span>
+    <h1>{{ site.title }}</h1>
+    <p class="hero-lede">{{ site.description }} Step into a future where bio-engineered cities breathe, communities grow their own economies, and a living currency ties it all together.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ site.github.url }}/the-world">Enter the World</a>
+      <a class="btn btn-ghost" href="{{ site.github.url }}/book">Read the Book</a>
+    </div>
+  </div>
+  <svg class="hero-sprig" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M100 190C100 190 96 120 60 90C30 65 20 30 20 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 190C100 190 104 130 140 100C165 78 175 40 175 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 190L100 60" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="60" cy="88" rx="14" ry="8" transform="rotate(-38 60 88)" fill="currentColor" opacity="0.6"/>
+    <ellipse cx="138" cy="98" rx="15" ry="8" transform="rotate(35 138 98)" fill="currentColor" opacity="0.6"/>
+    <ellipse cx="100" cy="58" rx="12" ry="18" fill="currentColor" opacity="0.6"/>
+  </svg>
+</section>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
-  {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
-  {% endif %}
-</div>
+<section class="section">
+  <div class="section-heading">
+    <span class="section-eyebrow">Find Your Way</span>
+    <h2>Six paths into Eadwyn</h2>
+    <p>Whether you're here for the lore, the story, or the living token that funds it all, start wherever calls to you.</p>
+  </div>
+  <div class="card-grid">
+    <a class="card waypoint-card" href="{{ site.github.url }}/the-world">
+      <span class="tag">Worldbuilding</span>
+      <h3>The World</h3>
+      <p>Bio-engineered architecture, localized economies, and the philosophy behind a civilization grown rather than built.</p>
+      <span class="card-link">Explore the world</span>
+    </a>
+    <a class="card waypoint-card" href="{{ site.github.url }}/journey">
+      <span class="tag">Narrative</span>
+      <h3>Journey</h3>
+      <p>Eadwyn's own arc — from idealistic vision, through crisis, to a hard-won understanding of resilience.</p>
+      <span class="card-link">Follow the journey</span>
+    </a>
+    <a class="card waypoint-card" href="{{ site.github.url }}/map">
+      <span class="tag">Cartography</span>
+      <h3>Map</h3>
+      <p>Chart the floating metropolis of Veymara and the other places this world is slowly revealing.</p>
+      <span class="card-link">See the map</span>
+    </a>
+    <a class="card waypoint-card" href="{{ site.github.url }}/ead">
+      <span class="tag">Ecosystem</span>
+      <h3>$EAD</h3>
+      <p>The living currency of regeneration — Catalysts, Catalyst Pods, and a token economy built to heal, not extract.</p>
+      <span class="card-link">Learn about $EAD</span>
+    </a>
+    <a class="card waypoint-card" href="{{ site.github.url }}/archives">
+      <span class="tag">Lore</span>
+      <h3>Archives</h3>
+      <p>Field notes and chapters from the world — the deep cuts behind the story, sorted for wandering.</p>
+      <span class="card-link">Browse the archives</span>
+    </a>
+    <a class="card waypoint-card" href="{{ site.github.url }}/book">
+      <span class="tag">The Source</span>
+      <h3>The Book</h3>
+      <p>The full account of <em>The World of Eadwyn</em> by Guillaume Lauzier — where all of this begins.</p>
+      <span class="card-link">About the book</span>
+    </a>
+  </div>
+</section>
+
+<section class="archive-strip">
+  <div class="section">
+    <div class="section-heading">
+      <span class="section-eyebrow">Latest from the Archive</span>
+      <h2>Recent field notes</h2>
+    </div>
+    <div class="archive-grid" style="padding: 0;">
+      {% assign latest_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in latest_posts limit: 3 %}
+        {% include archive-card.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="home-cta">
+  <h2>Grow with the world</h2>
+  <p>{{ site.title }} is still unfolding. Follow along as new chapters, locations, and Catalysts are revealed.</p>
+  <div class="hero-actions" style="justify-content: center;">
+    {% for item in site.data.settings.social limit: 4 %}
+      <a class="btn btn-ghost" href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+    {% endfor %}
+  </div>
+</section>

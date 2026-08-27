@@ -2,9 +2,10 @@
 layout: post
 title: "Catalyst Pods"
 author: "Eadwyn"
-categories: documentation
-tags: [sample]
+categories: $EAD
+tags: [eadwyn]
 image: Catalyst-Pods.png
+permalink: /archives/catalyst-pods
 ---
 
 ## Catalyst Pods — The Heart of a Regenerative World

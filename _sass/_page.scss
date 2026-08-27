@@ -1,6 +1,12 @@
 .page-content {
-  max-width: 600px;
+  max-width: 42rem;
   display: block;
-  margin: 10px auto 10px;
-  padding: 0px 10px 10px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+}
+.page-content h1 {
+  margin-top: 0;
+}
+.page-content article > *:first-child {
+  margin-top: 0;
 }

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: $EAD
+eyebrow: Ecosystem
+subtitle: The living currency of regeneration.
 permalink: /ead
 image: ead.png
 ---
@@ -142,11 +144,11 @@ Own a Pod NFT to sponsor innovation or open one in your city.
 
 ## Design Aesthetic
 
-- **Theme:** Bio-digital symbiosis — where moss meets machine  
-- **Palette:** Emerald green, glowing cyan, deep charcoal  
-- **Typography:** Futuristic sans-serif (Orbitron / Neue Machina)  
-- **Motion:** Subtle pulsation and bioluminescent shimmer  
-- **Hero Visual:** A seed pulsing with light, morphing into a living city  
+- **Theme:** Nature-forward symbiosis — where root meets ledger  
+- **Palette:** Moss green, sun-baked clay, warm bone, deep ink  
+- **Typography:** Editorial serif headlines over a clean sans body  
+- **Motion:** Quiet, organic — nothing pulses harder than a growing thing should  
+- **Hero Visual:** A seed taking root, unfolding into a living city  
 - **Call to Action:** *Plant Your Catalyst* | *Join the Council*
 
 ---

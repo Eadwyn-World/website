@@ -1,29 +1,35 @@
 .footer {
-  background: white;
-  color: $brand-color;
+  background: $color-moss-dark;
+  color: $color-paper;
   text-align: center;
-  min-height: 56px;
-  line-height: 45px;
-  width: $container-width;
+  padding: 3rem 1.25rem 2rem;
+  margin-top: 4rem;
 }
 .footer a {
-  color: $brand-color;
+  color: $color-paper;
   padding: 0px 10px 0px;
   text-decoration: none;
+  opacity: 0.85;
 }
-@media (max-width: $container-width) {
-  .footer {
-    background: white;
-    color: $brand-color;
-    text-align: center;
-    min-height: 56px;
-    line-height: 45px;
-    width: 95vw;
-  }
+.footer a:hover {
+  opacity: 1;
+  color: $color-clay-soft;
+}
+.footer-nav {
+  margin-bottom: 1rem;
+  font-family: $body-font-family;
+  font-size: 0.9rem;
+}
+.footer-nav a {
+  padding: 0 0.6rem;
 }
 .footer-description {
   display: block;
-  margin-bottom: 1rem;
-  color: #9a9a9a;
-  font-size:0.8rem;
+  margin-top: 1.25rem;
+  color: rgba($color-paper, 0.6);
+  font-size: 0.8rem;
+  font-family: $body-font-family;
+}
+.footer-description a {
+  color: rgba($color-paper, 0.6);
 }

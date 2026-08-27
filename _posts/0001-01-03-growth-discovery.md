@@ -2,9 +2,10 @@
 layout: post
 title: "Growth and Discovery"
 author: "Eadwyn"
-categories: documentation
-tags: [documentation,sample]
+categories: Journey
+tags: [eadwyn]
 image: Growth-Discovery.png
+permalink: /archives/growth-discovery
 ---
 
 In the "Growth and Discovery" section of *The World of Eadwyn*, the protagonist, Eadwyn, undergoes a profound personal transformation as their idealistic vision of a harmonious world—where technology and nature seamlessly unite—faces mounting crises. This chapter marks a pivotal shift from optimism to a deeper, more resilient understanding of sustainability, driven by both external challenges and internal reflection.
