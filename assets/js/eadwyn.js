@@ -135,4 +135,23 @@
     var valid = Array.prototype.some.call(regions, function (r) { return r.getAttribute('data-region') === initial; });
     select(valid ? initial : regions[0].getAttribute('data-region'), false);
   }
+  // Architecture: a diagram box and its row in "Five layers" light each other
+  document.querySelectorAll('[data-arch-host]').forEach(function (host) {
+    var linked = host.querySelectorAll('[data-layer]');
+    linked.forEach(function (el) {
+      var n = el.getAttribute('data-layer');
+      var on = function (state) {
+        host.querySelectorAll('[data-layer="' + n + '"]').forEach(function (m) { m.classList.toggle('lit', state); });
+      };
+      el.addEventListener('mouseenter', function () { on(true); });
+      el.addEventListener('mouseleave', function () { on(false); });
+    });
+    // Knowledge roots: hovering a root tip pulses its path up to the retrieval layer
+    host.querySelectorAll('.arch-node[data-tip]').forEach(function (tip) {
+      var i = tip.getAttribute('data-tip');
+      var path = host.querySelector('.tip-path[data-tip="' + i + '"]');
+      tip.addEventListener('mouseenter', function () { tip.classList.add('lit'); if (path) path.classList.add('pulse'); });
+      tip.addEventListener('mouseleave', function () { tip.classList.remove('lit'); if (path) path.classList.remove('pulse'); });
+    });
+  });
 })();
