@@ -1,11 +1,10 @@
-<footer class="footer">
-  <div class="footer-nav">
-    <a href="{{ site.github.url }}/">Home</a>
+<footer class="foot">
+  <a href="{{ site.github.url }}/">Eadwyn</a>
+  <div class="links">
     <a href="{{ site.github.url }}/about">About</a>
     <a href="{{ site.github.url }}/contact">Contact</a>
+    {% for item in site.data.settings.social %}
+      <a href="{% include href.html u=item.link %}"{% unless item.link contains 'mailto:' or item.link contains '.xml' %} target="_blank" rel="noopener"{% endunless %}>{{ item.name }}</a>
+    {% endfor %}
   </div>
-  {% for item in site.data.settings.social %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-  {% endfor %}
-  <div class="footer-description"><a href="{{ site.github.url }}/">{{ site.title }} — {{ site.description }}</a></div>
 </footer>

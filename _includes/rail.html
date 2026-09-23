@@ -1,0 +1,9 @@
+<nav class="rail" aria-label="The World">
+  {% for item in site.data.settings.rail %}
+    {% assign item_url = '/' | append: item.url %}
+    {% assign on = false %}
+    {% if page.url == item_url or page.rail == item.name %}{% assign on = true %}{% endif %}
+    {% if item.url == 'archives' and page.layout == 'post' and page.rail == nil %}{% assign on = true %}{% endif %}
+    <a href="{{ site.github.url }}{{ item_url }}"{% if on %} class="on" aria-current="page"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>

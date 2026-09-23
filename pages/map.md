@@ -4,6 +4,7 @@ title: Map
 eyebrow: Cartography
 subtitle: Charting the places of Eadwyn, one location at a time.
 permalink: /map
+rail: Map
 image: Veymara.png
 ---
 
@@ -13,8 +14,6 @@ image: Veymara.png
 
 A floating metropolis that integrates AI-driven architecture with organic structures, where knowledge, data, and decentralized governance shape the city's core. Veymara is the first place this world has fully revealed — more locations are being charted as the story grows.
 
-<div class="divider">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22V8M12 8C12 8 5 8 5 2C5 2 12 3 12 8ZM12 8C12 8 19 8 19 2C19 2 12 3 12 8Z"/></svg>
-</div>
+---
 
-*More of the map is coming as new chapters unfold. Follow along in the [Archives](/archives) or the [Journey](/journey).*
+*More of the map is coming as new chapters unfold. Explore the [living map](/the-world), or follow along in the [Archives](/archives) and the [Journey](/journey).*

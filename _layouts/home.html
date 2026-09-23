@@ -1,95 +1,96 @@
 ---
 layout: default
-title: Home
 ---
 
-<section class="hero">
-  <div class="hero-inner">
-    <span class="hero-eyebrow">A Speculative World</span>
-    <h1>{{ site.title }}</h1>
-    <p class="hero-lede">{{ site.description }} Step into a future where bio-engineered cities breathe, communities grow their own economies, and a living currency ties it all together.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="{{ site.github.url }}/the-world">Enter the World</a>
-      <a class="btn btn-ghost" href="{{ site.github.url }}/book">Read the Book</a>
+<section class="hero img" style="background-image:url('{{ site.github.url }}/assets/img/The-World.png')">
+  <div class="fade" style="background:linear-gradient(180deg,rgba(11,21,17,.55) 0%,rgba(11,21,17,.05) 40%,rgba(11,21,17,.96) 100%)"></div>
+  <div class="orb" style="left:54%;top:0;width:760px;height:760px;background:radial-gradient(circle,rgba(94,231,222,.2),transparent 60%)"></div>
+  <svg class="deco drift" style="inset:0;width:100%;height:100%;color:rgba(94,231,222,.8)" aria-hidden="true"><use href="#spores" width="1440" height="960"></use></svg>
+  <svg class="deco hide-sm" style="left:43%;bottom:-10px;width:62%;height:300px;color:rgba(94,231,222,.55)" viewBox="0 0 900 300" preserveAspectRatio="none" aria-hidden="true"><use href="#circuit" x="20" y="-20" width="480" height="330"></use><use href="#circuit" x="440" y="30" width="420" height="280" opacity=".6"></use></svg>
+  <svg class="deco" style="left:-80px;bottom:-50px;width:560px;height:364px;color:#123527" aria-hidden="true"><use href="#frond" width="560" height="364"></use></svg>
+  <svg class="deco" style="right:-120px;bottom:-70px;width:620px;height:400px;color:#0f2b20;transform:scaleX(-1)" aria-hidden="true"><use href="#frond" width="620" height="400"></use></svg>
+  <svg class="deco hide-sm" style="left:23%;bottom:-40px;width:250px;height:262px;color:#1e4d3a" aria-hidden="true"><use href="#monstera" width="250" height="262"></use></svg>
+  <svg class="deco hide-sm" style="left:86%;top:150px;width:100px;height:340px;color:#25583f;z-index:1" aria-hidden="true"><use href="#vine" width="100" height="340"></use></svg>
+  <span class="node" style="left:68%;top:24%"></span>
+  <span class="node am" style="left:70%;top:54%;animation-delay:1.3s"></span>
+  <span class="node sm" style="left:64%;top:67%;animation-delay:2.2s"></span>
+
+  <div class="hero-copy wrap">
+    <span class="eb eb-teal">The World of Eadwyn</span>
+    <h1 class="sf-light">Where nature and technology evolve as one.</h1>
+    <div class="btns">
+      <a class="btn pri" href="{{ site.github.url }}/the-world">Enter the world</a>
+      <a class="btn" href="{{ site.github.url }}/manifesto">Read the manifesto</a>
     </div>
   </div>
-  <svg class="hero-sprig" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M100 190C100 190 96 120 60 90C30 65 20 30 20 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <path d="M100 190C100 190 104 130 140 100C165 78 175 40 175 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <path d="M100 190L100 60" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <ellipse cx="60" cy="88" rx="14" ry="8" transform="rotate(-38 60 88)" fill="currentColor" opacity="0.6"/>
-    <ellipse cx="138" cy="98" rx="15" ry="8" transform="rotate(35 138 98)" fill="currentColor" opacity="0.6"/>
-    <ellipse cx="100" cy="58" rx="12" ry="18" fill="currentColor" opacity="0.6"/>
+</section>
+
+<section class="statements wrap" data-grow-host>
+  <svg class="root" viewBox="0 0 120 1000" preserveAspectRatio="none" fill="none" stroke-width="1.5" data-grow="clip" aria-hidden="true">
+    <path d="M60 0c14 130-18 220 0 340s-18 240 0 360 12 200 0 300" stroke="rgba(94,231,222,.55)" stroke-dasharray="8 10" vector-effect="non-scaling-stroke"></path>
+    <path d="M60 300c-30 20-50 60-60 110M60 640c30 20 50 60 60 110" stroke="rgba(240,179,90,.55)" stroke-dasharray="4 8" vector-effect="non-scaling-stroke"></path>
   </svg>
-</section>
+  <svg class="deco hide-sm" style="left:50%;top:280px;width:90px;height:95px;color:#1e4d3a;transform:translateX(-120px) rotate(-30deg)" aria-hidden="true"><use href="#monstera" width="90" height="95"></use></svg>
+  <svg class="deco hide-sm" style="left:50%;top:620px;width:90px;height:95px;color:#1e4d3a;transform:translateX(30px) rotate(40deg)" aria-hidden="true"><use href="#monstera" width="90" height="95"></use></svg>
 
-<section class="section">
-  <div class="section-heading">
-    <span class="section-eyebrow">Find Your Way</span>
-    <h2>Six paths into Eadwyn</h2>
-    <p>Whether you're here for the lore, the story, or the living token that funds it all, start wherever calls to you.</p>
+  <div class="statement reveal">
+    <span class="eb eb-dim">01</span>
+    <p class="big">Two expressions of one evolutionary force.</p>
+    <p class="small">Artificial intelligence and biological intelligence are not opposites.</p>
   </div>
-  <div class="card-grid">
-    <a class="card waypoint-card" href="{{ site.github.url }}/the-world">
-      <span class="tag">Worldbuilding</span>
-      <h3>The World</h3>
-      <p>Bio-engineered architecture, localized economies, and the philosophy behind a civilization grown rather than built.</p>
-      <span class="card-link">Explore the world</span>
-    </a>
-    <a class="card waypoint-card" href="{{ site.github.url }}/journey">
-      <span class="tag">Narrative</span>
-      <h3>Journey</h3>
-      <p>Eadwyn's own arc — from idealistic vision, through crisis, to a hard-won understanding of resilience.</p>
-      <span class="card-link">Follow the journey</span>
-    </a>
-    <a class="card waypoint-card" href="{{ site.github.url }}/map">
-      <span class="tag">Cartography</span>
-      <h3>Map</h3>
-      <p>Chart the floating metropolis of Veymara and the other places this world is slowly revealing.</p>
-      <span class="card-link">See the map</span>
-    </a>
-    <a class="card waypoint-card" href="{{ site.github.url }}/ead">
-      <span class="tag">Ecosystem</span>
-      <h3>$EAD</h3>
-      <p>The living currency of regeneration — Catalysts, Catalyst Pods, and a token economy built to heal, not extract.</p>
-      <span class="card-link">Learn about $EAD</span>
-    </a>
-    <a class="card waypoint-card" href="{{ site.github.url }}/archives">
-      <span class="tag">Lore</span>
-      <h3>Archives</h3>
-      <p>Field notes and chapters from the world — the deep cuts behind the story, sorted for wandering.</p>
-      <span class="card-link">Browse the archives</span>
-    </a>
-    <a class="card waypoint-card" href="{{ site.github.url }}/book">
-      <span class="tag">The Source</span>
-      <h3>The Book</h3>
-      <p>The full account of <em>The World of Eadwyn</em> by Guillaume Lauzier — where all of this begins.</p>
-      <span class="card-link">About the book</span>
-    </a>
+  <div class="statement r reveal">
+    <span class="eb eb-dim">02</span>
+    <p class="big">Spires wrapped in moss double as data infrastructure.</p>
+  </div>
+  <div class="statement reveal">
+    <span class="eb eb-dim">03</span>
+    <p class="big">Knowledge grows like a root system.</p>
+  </div>
+  <div class="statement r reveal">
+    <span class="eb eb-dim">04</span>
+    <p class="big">Nothing is static.</p>
+    <p class="small">Architecture, roads, even society evolve with the seasons and needs.</p>
   </div>
 </section>
 
-<section class="archive-strip">
-  <div class="section">
-    <div class="section-heading">
-      <span class="section-eyebrow">Latest from the Archive</span>
-      <h2>Recent field notes</h2>
-    </div>
-    <div class="archive-grid" style="padding: 0;">
-      {% assign latest_posts = site.posts | sort: 'date' | reverse %}
-      {% for post in latest_posts limit: 3 %}
-        {% include archive-card.html %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="home-cta">
-  <h2>Grow with the world</h2>
-  <p>{{ site.title }} is still unfolding. Follow along as new chapters, locations, and Catalysts are revealed.</p>
-  <div class="hero-actions" style="justify-content: center;">
-    {% for item in site.data.settings.social limit: 4 %}
-      <a class="btn btn-ghost" href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-    {% endfor %}
+<section class="teasers wrap">
+  <div class="grid-2">
+    <a class="card terr teaser" href="{{ site.github.url }}/ai-model">
+      <i class="strip t"></i>
+      <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#5ee7de" stroke-width="1.5" aria-hidden="true"><circle cx="24" cy="24" r="6"></circle><circle cx="8" cy="12" r="3"></circle><circle cx="40" cy="10" r="3"></circle><circle cx="38" cy="38" r="3"></circle><circle cx="10" cy="38" r="3"></circle><path d="M19 20l-9-6M29 20l9-8M28 28l8 8M20 28l-8 8"></path></svg>
+      <div>
+        <span class="eb eb-teal">AI Model</span>
+        <p class="t-title">An open, federated mind.</p>
+        <p class="t-sub">Grown by everyone who contributes.</p>
+      </div>
+      <svg class="deco" style="right:-40px;bottom:-30px;width:260px;height:160px;color:rgba(94,231,222,.35)" aria-hidden="true"><use href="#circuit" width="260" height="195"></use></svg>
+    </a>
+    <a class="card terr2 teaser" href="{{ site.github.url }}/bi-model">
+      <i class="strip"></i>
+      <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#f0b35a" stroke-width="1.5" aria-hidden="true"><path d="M14 4c20 12-20 28 0 40M34 4c-20 12 20 28 0 40M16 12h16M16 36h16M14 24h20"></path></svg>
+      <div>
+        <span class="eb eb-amber">BI Model</span>
+        <p class="t-title">Nature's own processing.</p>
+      </div>
+      <svg class="deco" style="right:-30px;bottom:-40px;width:200px;height:210px;color:#1e4d3a;transform:rotate(-20deg)" aria-hidden="true"><use href="#monstera" width="200" height="210"></use></svg>
+    </a>
+    <a class="card terr2 teaser parch" href="{{ site.github.url }}/manifesto">
+      <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#1d1a14" stroke-width="1.5" aria-hidden="true"><path d="M24 12c-5-4-12-4-18-2v28c6-2 13-2 18 2 5-4 12-4 18-2V10c-6-2-13-2-18 2zM24 12v28"></path></svg>
+      <div>
+        <span class="eb eb-moss">Manifesto</span>
+        <p class="t-title">What we hold to be true.</p>
+      </div>
+      <svg class="deco" style="right:-20px;top:-40px;width:160px;height:520px;color:#3f8a5a;opacity:.5" aria-hidden="true"><use href="#vine" width="160" height="520"></use></svg>
+    </a>
+    <a class="card terr teaser bark has-cover" href="{{ site.github.url }}/book">
+      <i class="strip"></i>
+      <svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="#f0b35a" stroke-width="1.5" aria-hidden="true"><path d="M24 6v20M24 26c-6 6-12 8-16 16M24 26c6 6 12 8 16 16M24 26c-2 8-4 12-4 18M24 26c2 8 4 12 4 18M24 6c8 0 12 6 14 12-6-2-12 0-14 4"></path></svg>
+      <div>
+        <span class="eb eb-amber">The Book</span>
+        <p class="t-title">The World of Eadwyn.</p>
+        <p class="t-sub">Guillaume Lauzier</p>
+      </div>
+      <div class="cover mini-cover" aria-hidden="true"></div>
+    </a>
   </div>
 </section>

@@ -8,7 +8,7 @@ permalink: /about
 
 **The World of Eadwyn** is a speculative-fiction universe created by **Guillaume Lauzier** — a future where architecture breathes, economies stay local, and a regenerative currency ties technology back to the health of the world it runs on.
 
-It started as a book, *The World of Eadwyn*, and has grown into an ongoing project: lore chapters in the [Archives](/archives), a living token economy in [$EAD](/ead), and a map that's slowly being charted at [Map](/map). Everything on this site sits inside one continuous fiction, expanding as new chapters are written.
+It started as a book, *The World of Eadwyn*, and has grown into an ongoing project: an open, federated [AI Model](/ai-model) and its biological twin, the [BI Model](/bi-model); a [Manifesto](/manifesto) distilled from the book; lore chapters in the [Archives](/archives); a living token economy in [$EAD](/ead); and a [living map](/the-world) that's slowly being charted. Everything on this site sits inside one continuous fiction, expanding as new chapters are written.
 
 ## The Idea
 

@@ -1,44 +1,6 @@
 ---
 ---
 
-// Type
-$display-font-family: 'Fraunces', Georgia, serif;
-$base-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$body-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$code-font-family: "Source Code Pro", monospace;
+$code-font-family: ui-monospace, Menlo, monospace;
 
-// Palette — nature-forward / organic: moss, clay, bone, ink
-$color-paper:      #f6f1e6; // bone / warm paper background
-$color-paper-dim:  #efe8d8; // slightly deeper paper, for panels
-$color-ink:        #24261f; // near-black ink for body text
-$color-ink-soft:    #4b4f42; // softer ink for secondary text
-$color-moss:        #4a5c3a; // primary green
-$color-moss-dark:   #313e26; // deep moss, headers/footer
-$color-moss-pale:   #dbe4cd; // pale moss for tints/borders
-$color-clay:         #b5662f; // terracotta accent
-$color-clay-soft:    #e8c9a8; // pale clay
-$color-bark:          #6c5a42; // brown, borders/muted
-$color-mist:           #ddd6c2; // hairline borders
-
-$brand-color: $color-ink;
-
-$container-width: 1120px;
-$tablet-width: 700px;
-$phone-width: 480px;
-
-$header-thickness: 64px;
-
-$icon-transition-time: 0.4s;
-$envelope-color: $color-clay;
-$twitter-color: $color-moss-dark;
-$instagram-color: $color-clay;
-$github-color: $color-ink;
-$linkedin-color: $color-moss-dark;
-$facebook-color: $color-moss-dark;
-$google-color: $color-clay;
-$pinterest-color: $color-clay;
-$medium-color: $color-moss-dark;
-$codepen-color: $color-ink;
-$rss-color: $color-clay;
-
-@import "-sections-dir";
+@import "eadwyn", "code";

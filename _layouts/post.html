@@ -2,28 +2,32 @@
 layout: default
 ---
 
-<div class="post-content">
-  <h1>
-    {{ page.title }}
-  </h1>
-  {% if site.hide_post_date != true %}
-    {% include post-date.html %}
-  {% endif %}
-  {% if page.image %}
-    <div class="featured-image">
-      <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-    </div>
-  {% endif %}
-  <article>
-    {{ content }}
-  </article>
-  {% if site.hide_post_share != true %}
-    {% include post-share.html %}
-  {% endif %}
-  {% if site.hide_related_posts != true %}
-    {% include related-posts.html %}
-  {% endif %}
+<section class="page-hero img"{% if page.image %} style="background-image:url('{{ site.github.url }}/assets/img/{{ page.image }}')"{% endif %}>
+  <div class="fade"></div>
+  <div class="copy wrap">
+    <span class="eb eb-teal">Archives{% if page.categories.size > 0 %} · {{ page.categories | first }}{% endif %}</span>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">From <em>The World of Eadwyn</em> by Guillaume Lauzier</p>
+  </div>
+</section>
+
+<article class="prose wrap">
+  {{ content }}
+
+  {% assign posts_in_order = site.posts | sort: 'date' %}
+  <nav class="post-nav" aria-label="More from the Archives">
+    <span class="eb eb-dim">Keep reading</span>
+    {% for post in posts_in_order %}
+      {% if post.url == page.url %}
+        {% unless forloop.last %}{% assign next_post = posts_in_order[forloop.index] %}{% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if next_post %}<a href="{{ site.github.url }}{{ next_post.url }}">Next chapter: {{ next_post.title }} →</a>{% endif %}
+    <a href="{{ site.github.url }}/archives">All field notes →</a>
+    <a href="{{ site.github.url }}/the-world">Back to the living map →</a>
+  </nav>
+
   {% if site.data.settings.disqus.comments %}
     {% include disqus.html %}
   {% endif %}
-</div>
+</article>
