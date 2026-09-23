@@ -38,6 +38,7 @@ links:
   download_book:  '/contact'   # free PDF / ePub download
   ai_contribute:  '/contact'   # how to contribute / run a node
   ai_source:      '/contact'   # AI Model source repository
+  share_knowledge: '/contact'  # BI Model: submit field notes, observations, corrections
 
 sharing_button_prompt: 'Feel free to share!'
 

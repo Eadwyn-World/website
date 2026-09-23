@@ -833,3 +833,164 @@ a.excerpt:hover { color: var(--char); transform: rotateY(-18deg); box-shadow: 30
 }
 
 main { overflow-x: clip; }
+
+/* ---------- Round 2: architecture + knowledge-roots sections ---------- */
+
+.sec-head-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+.sec-head-2 h2 { margin-top: 16px; font-size: clamp(44px, 5.3vw, 76px); line-height: 1.02; font-weight: 300; }
+.sec-head-2 p { font-size: 20px; line-height: 1.7; color: rgba(239, 230, 211, .72); }
+
+// Diagrams are drawn on the canvas's own coordinate grid (--vw x --vh units)
+// and scale with their container; text scales with container width.
+.arch {
+  --vw: 1200;
+  --vh: 1040;
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 1200 / 1040;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+.arch.roots { --vh: 680; aspect-ratio: 1200 / 680; }
+.arch > svg.lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.arch-node {
+  position: absolute;
+  left: calc(var(--x) / var(--vw) * 100%);
+  top: calc(var(--y) / var(--vh) * 100%);
+  width: calc(var(--w) / var(--vw) * 100%);
+  height: calc(var(--h) / var(--vh) * 100%);
+  padding: clamp(12px, 2cqw, 24px);
+  border-radius: 18px;
+  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+.arch-node .eb { font-size: clamp(9px, .92cqw, 11px); letter-spacing: .14em; }
+.arch-node p { margin-top: 8px; font-family: var(--serif); font-size: clamp(13px, 1.67cqw, 20px); line-height: 1.2; }
+.arch-node p.small { font-family: var(--sans); font-size: clamp(11px, 1.25cqw, 15px); line-height: 1.4; color: var(--bone-2); }
+.arch-node.bi { border-style: dashed; border-color: rgba(240, 179, 90, .5); background: rgba(58, 42, 28, .5); }
+.arch-node.coord { border-color: rgba(94, 231, 222, .45); border-radius: 70px 22px 70px 22px; padding: clamp(14px, 2.6cqw, 32px); }
+.arch-node.pub { background: linear-gradient(135deg, #0f3a3a, var(--ink)); border-color: rgba(94, 231, 222, .6); box-shadow: 0 0 60px rgba(94, 231, 222, .2); border-radius: 22px 70px 22px 70px; padding: clamp(14px, 2.6cqw, 30px); }
+.arch-node.pod { border-radius: 40px 14px 40px 14px; border-color: rgba(240, 179, 90, .35); padding: clamp(10px, 1.8cqw, 22px); }
+.arch-node.tip { border-radius: 40px 14px 40px 14px; border-color: rgba(240, 179, 90, .4); }
+.arch-node.tip .node { width: 10px; height: 10px; margin-bottom: 12px; }
+.arch-node.tip p { margin-top: 0; font-size: clamp(15px, 2cqw, 24px); }
+.arch-node.retrieval { border-radius: 22px 70px 22px 70px; border-style: dashed; border-color: rgba(240, 179, 90, .55); background: rgba(58, 42, 28, .55); padding: clamp(16px, 3cqw, 36px); }
+.arch-node.retrieval p { font-size: clamp(15px, 2cqw, 24px); }
+.arch-node.to-ai { border-color: rgba(94, 231, 222, .4); }
+.arch-node.to-ai p { font-size: clamp(14px, 1.83cqw, 22px); }
+.arch-node.to-ai a { font-family: var(--sans); font-size: 14px; }
+.arch-label {
+  position: absolute;
+  left: calc(var(--x) / var(--vw) * 100%);
+  top: calc(var(--y) / var(--vh) * 100%);
+  font-size: clamp(9px, .92cqw, 11px);
+  letter-spacing: .14em;
+}
+.arch-node.lit, a.arch-node:hover { border-color: var(--teal); box-shadow: 0 0 40px rgba(94, 231, 222, .25); }
+.arch-node.bi.lit, .arch-node.pod.lit, .arch-node.tip.lit { border-color: var(--amber); box-shadow: 0 0 40px rgba(240, 179, 90, .25); }
+
+.arch .loop { animation: loopflow 6s linear infinite; }
+@keyframes loopflow { to { stroke-dashoffset: -120; } }
+.arch .tip-path { transition: stroke-opacity .3s ease, stroke-width .3s ease; }
+.arch .tip-path.pulse { stroke-opacity: 1; stroke-width: 3.5; animation: loopflow 1.6s linear infinite; }
+
+/* Five layers */
+.layers { margin-top: 30px; border-bottom: 1px solid var(--line); }
+.layer {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 420px) 1fr;
+  gap: 28px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+  transition: background .3s ease;
+}
+.layer .num { font-variant-numeric: tabular-nums; letter-spacing: .06em; color: var(--teal); }
+.layer h3 { font-size: clamp(26px, 2.4vw, 34px); }
+.layer p { font-size: 19px; color: rgba(239, 230, 211, .68); }
+.layer.lit { background: linear-gradient(90deg, rgba(94, 231, 222, .08), transparent 70%); }
+.layer.lit h3 { color: #fff; }
+
+/* Organism cards + pipeline */
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.organ { padding: 44px 36px; min-height: 300px; display: grid; align-content: space-between; gap: 32px; }
+.organ .eb { font-size: 11px; }
+.organ h3 { margin-top: 10px; font-size: clamp(24px, 2.1vw, 30px); line-height: 1.1; }
+.organ.glow { background: linear-gradient(135deg, #0f3a3a, var(--ink)); border-color: rgba(94, 231, 222, .4); }
+
+.principle { padding: 44px 40px; min-height: 280px; }
+.principle .eb { font-size: 11px; }
+.principle h3 { margin-top: 12px; font-size: clamp(26px, 2.2vw, 32px); line-height: 1.1; }
+.principle p { margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(239, 230, 211, .65); }
+
+.pipe-head { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; }
+.pipe-head span:last-child { font-size: 15px; color: var(--bone-3); }
+.pipeline {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 16px;
+  color: #9fe3dd;
+}
+.pipeline span.chip { padding: 16px 22px; border: 1px solid rgba(94, 231, 222, .4); border-radius: 999px; }
+.pipeline span.chip.src { border-color: rgba(240, 179, 90, .5); color: #f3d29a; }
+.pipeline span.chip.hub { border-color: var(--teal); box-shadow: 0 0 24px rgba(94, 231, 222, .3); }
+.pipeline .arrow { color: var(--teal); }
+.pipeline .plus { color: rgba(239, 230, 211, .4); }
+
+.mt-150 { margin-top: 150px; position: relative; }
+.mt-130 { margin-top: 130px; position: relative; }
+
+@media (max-width: 1100px) {
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+
+/* Phones: diagrams become a vertical flow, read top to bottom */
+@media (max-width: 900px) {
+  .sec-head-2 { grid-template-columns: 1fr; gap: 20px; }
+  .sec-head-2 p { font-size: 17px; }
+  .arch, .arch.roots {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 48px;
+    padding-left: 22px;
+    border-left: 2px dashed rgba(94, 231, 222, .35);
+  }
+  .arch.roots { border-left-color: rgba(240, 179, 90, .45); }
+  .arch > svg.lines { display: none; }
+  .arch-node, .arch-label { position: relative; left: auto; top: auto; width: auto; height: auto; }
+  .arch-node { padding: 18px 20px; overflow: visible; }
+  .arch-node::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 22px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--ink);
+    border: 2px solid var(--teal);
+  }
+  .arch-node.bi::before, .arch-node.pod::before, .arch-node.tip::before, .arch-node.retrieval::before { border-color: var(--amber); }
+  .arch-node .eb { font-size: 11px; }
+  .arch-node p, .arch-node.retrieval p, .arch-node.tip p, .arch-node.to-ai p { font-size: 18px; }
+  .arch-node p.small { font-size: 15px; }
+  .arch-label { font-size: 11px; margin-top: 8px; }
+  .layer { grid-template-columns: 40px 1fr; gap: 6px 14px; }
+  .layer p { grid-column: 2; font-size: 16px; }
+  .grid-4 { grid-template-columns: 1fr; }
+  .organ, .principle { min-height: 0; padding: 36px 30px; }
+  .mt-150, .mt-130 { margin-top: 90px; }
+  .pipeline { font-size: 13px; gap: 10px; }
+  .pipeline span.chip { padding: 12px 16px; }
+}

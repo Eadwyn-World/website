@@ -1,0 +1,59 @@
+<section class="sec wrap" id="architecture" data-arch-host>
+  <svg class="deco" style="right:-120px;top:-60px;width:600px;height:390px;color:#0f2b20;transform:rotate(-160deg) scaleX(-1)" aria-hidden="true"><use href="#frond" width="600" height="390"></use></svg>
+  <svg class="deco drift" style="inset:0;width:100%;height:100%;color:rgba(94,231,222,.5)" aria-hidden="true"><use href="#spores" width="1440" height="3000"></use></svg>
+  <div class="sec-head-2">
+    <div><span class="eb eb-teal">Architecture</span><h2>How the federated mind learns.</h2></div>
+    <p>Many Pod, home, or device nodes learn locally; only model updates travel through the network; a review and governance layer evaluates merges; and a published shared model is redistributed back to the federation.</p>
+  </div>
+
+  <div class="arch" role="img" aria-label="Federation architecture: knowledge roots feed a retrieval layer; Pods, homes and devices train locally and send updates to federation coordination; updates pass through aggregation and governance review into a published model, which serves inference and the federation UI and is redistributed back to every node.">
+      <svg class="lines" viewBox="0 0 1200 1040" fill="none" stroke-width="2.5" aria-hidden="true">
+        <path d="M450 160V212M450 390V452" stroke="#f0b35a" stroke-dasharray="6 8"></path>
+        <path d="M230 395C270 395 260 520 292 520M230 555H292M230 715C270 715 260 590 292 590" stroke="#f0b35a" stroke-dasharray="6 8"></path>
+        <path d="M600 520C630 520 630 445 652 445M790 530V592M920 685C945 685 935 590 952 590M1080 460V378M1080 650V732" stroke="#5ee7de"></path>
+        <path class="loop" d="M1080 910V980H115V788" stroke="#5ee7de" stroke-opacity=".45" stroke-dasharray="2 10" stroke-linecap="round"></path>
+        <g fill="#5ee7de"><path d="M660 445l-12-7v14z"></path><path d="M790 600l-7-12h14z"></path><path d="M960 590l-12-7v14z"></path><path d="M1080 370l-7 12h14z"></path><path d="M1080 740l-7-12h14z"></path><path d="M115 780l-7 12h14z" opacity=".6"></path></g>
+        <g fill="#f0b35a"><path d="M450 220l-7-12h14z"></path><path d="M450 460l-7-12h14z"></path><path d="M300 555l-12-7v14z"></path><path d="M300 520l-12-4v12z"></path><path d="M300 590l-12-8v12z"></path></g>
+      </svg>
+      <div class="card arch-node bi" style="--x:300;--y:0;--w:300;--h:160"><span class="eb" style="color:var(--amber)">BI / knowledge roots</span><p>Field notes, observations, lore, corrections, signals</p></div>
+      <div class="card arch-node " style="--x:300;--y:220;--w:300;--h:170"><span class="eb" style="color:rgba(239,230,211,.55)">Knowledge / retrieval</span><p>Structured memory, field knowledge, reference corpora, root mappings</p></div>
+      <span class="eb arch-label" style="--x:0;--y:290;color:rgba(239,230,211,.45)">Local training side</span>
+      <div class="card arch-node pod" style="--x:0;--y:330;--w:230;--h:130" data-layer="1"><span class="eb" style="color:var(--amber)">Pod node A</span><p class="small">Local data stays · local training</p></div>
+      <div class="card arch-node pod" style="--x:0;--y:490;--w:230;--h:130" data-layer="1"><span class="eb" style="color:var(--amber)">Home / device B</span><p class="small">Local data stays · local training</p></div>
+      <div class="card arch-node pod" style="--x:0;--y:650;--w:230;--h:130" data-layer="1"><span class="eb" style="color:var(--amber)">Pod node C</span><p class="small">Local data stays · local training</p></div>
+      <span class="eb arch-label" style="--x:0;--y:800;color:var(--amber)">Updates travel upward only</span>
+      <div class="card arch-node coord" style="--x:300;--y:460;--w:300;--h:190" data-layer="2"><span class="eb" style="color:var(--teal)">Federation coordination</span><p>Node registry · round orchestration · model registry · stats</p></div>
+      <div class="card arch-node " style="--x:660;--y:360;--w:260;--h:170" data-layer="3"><span class="eb" style="color:var(--teal)">Aggregation + merge</span><p>Validate updates · candidate checkpoints · merge sets</p></div>
+      <div class="card arch-node " style="--x:660;--y:600;--w:260;--h:170" data-layer="4"><span class="eb" style="color:var(--teal)">Governance / review</span><p>Reviewer votes · approvals · rejection · publish decisions</p></div>
+      <div class="card arch-node pub" style="--x:960;--y:460;--w:240;--h:190" data-layer="5"><span class="eb" style="color:var(--teal)">Published model</span><p>Versioned checkpoint + metadata</p></div>
+      <div class="card arch-node " style="--x:960;--y:200;--w:240;--h:170" data-layer="5"><span class="eb" style="color:rgba(239,230,211,.55)">Inference / edge</span><p>Serve responses using the published model</p></div>
+      <div class="card arch-node " style="--x:960;--y:740;--w:240;--h:170" data-layer="5"><span class="eb" style="color:rgba(239,230,211,.55)">Federation UI</span><p>Stats, contribution, source, run-a-node</p></div>
+      <span class="eb arch-label" style="--x:0;--y:1004;width:100%;text-align:center;color:rgba(94,231,222,.7)">The published model is redistributed back to every node</span>
+  </div>
+
+  <div class="mt-150">
+    <span class="eb eb-teal">Five layers</span>
+    <div class="layers">
+      <div class="layer" data-layer="1"><span class="num">01</span><h3>Local node layer</h3><p>Pods, homes, or devices train locally and keep their data local.</p></div>
+      <div class="layer" data-layer="2"><span class="num">02</span><h3>Coordination layer</h3><p>Tracks nodes, rounds, versions, sync state, and network metadata.</p></div>
+      <div class="layer" data-layer="3"><span class="num">03</span><h3>Aggregation layer</h3><p>Receives updates and creates candidate model merges.</p></div>
+      <div class="layer" data-layer="4"><span class="num">04</span><h3>Governance layer</h3><p>Reviews merges, votes, approves, rejects, and publishes.</p></div>
+      <div class="layer" data-layer="5"><span class="num">05</span><h3>Published model layer</h3><p>Serves the approved model back to edge inference and the public-facing federation surfaces.</p></div>
+    </div>
+  </div>
+
+  <div class="mt-150">
+    <span class="eb eb-dim">Read it as an organism</span>
+    <div class="grid-4" style="margin-top:30px">
+      <div class="card terr organ"><svg width="56" height="58" style="color:#3f8a5a" aria-hidden="true"><use href="#monstera" width="56" height="58"></use></svg><div><span class="eb eb-amber">Leaves and root tips</span><h3>Pods and contributors</h3></div></div>
+      <div class="card terr2 dashed organ"><svg width="80" height="40" style="color:#f0b35a" aria-hidden="true"><use href="#roots" width="80" height="40"></use></svg><div><span class="eb eb-amber">Nutrients through the roots</span><h3>Learning updates</h3></div></div>
+      <div class="card terr organ"><svg width="80" height="60" style="color:#5ee7de" aria-hidden="true"><use href="#circuit" width="80" height="60"></use></svg><div><span class="eb eb-teal">Trunk and circulation</span><h3>Aggregation and governance</h3></div></div>
+      <div class="card terr2 organ glow"><span class="node static"></span><div><span class="eb eb-teal">This season's state</span><h3>The published model</h3></div></div>
+    </div>
+  </div>
+
+  <div class="mt-150">
+    <div class="pipe-head"><span class="eb eb-teal">Implementation</span><span>Run a node, share knowledge, review merges, and trust a model that is inspectable and collectively grown.</span></div>
+    <div class="pipeline"><span class="chip src">Contributor / Pod / Device</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip ">Training runtime node</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip ">Update validation API</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip ">Aggregator service</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip ">Governance review service</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip hub">Model registry</span> <span class="arrow" aria-hidden="true">→</span> <span class="chip ">Inference edge</span> <span class="plus" aria-hidden="true">+</span> <span class="chip">Web federation console</span></div>
+  </div>
+</section>
