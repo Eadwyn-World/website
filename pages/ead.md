@@ -1,11 +1,12 @@
 ---
 layout: page
 title: $EAD
+eyebrow: Ecosystem
+subtitle: The living currency of regeneration.
 permalink: /ead
 image: ead.png
+hero_image: ead.png
 ---
-
-![Eadwyn's World](https://eadwyn.com/assets/img/ead.png)
 
 ### *The Currency of Regeneration*
 
@@ -132,7 +133,7 @@ Own a Pod NFT to sponsor innovation or open one in your city.
 
 ## Join the Regeneration
 
-**Twitter / X:** [@EadwynWorld](#)  
+**Twitter / X:** [@EadwynWorld](https://twitter.com/eadwynworld)  
 **Token Launch:** Q1 2026  
 **Chain:** Solana – ultra-efficient, eco-friendly, and built for speed
 
@@ -142,10 +143,10 @@ Own a Pod NFT to sponsor innovation or open one in your city.
 
 ## Design Aesthetic
 
-- **Theme:** Bio-digital symbiosis — where moss meets machine  
-- **Palette:** Emerald green, glowing cyan, deep charcoal  
-- **Typography:** Futuristic sans-serif (Orbitron / Neue Machina)  
-- **Motion:** Subtle pulsation and bioluminescent shimmer  
+- **Theme:** Bio-digital symbiosis — a night forest lit from within  
+- **Palette:** Deep forest ink, bone, glowing teal (AI) and warm amber (BI)  
+- **Typography:** Spectral for statements, Manrope for everything that works  
+- **Motion:** Slow and breathing — nodes pulse on a 4-second heartbeat, spores drift  
 - **Hero Visual:** A seed pulsing with light, morphing into a living city  
 - **Call to Action:** *Plant Your Catalyst* | *Join the Council*
 

@@ -6,27 +6,38 @@ disqus:
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-112060364-2'
 
+# Top navigation — the five pages of the organism, plus Home
 menu:
-- {name: 'The World',  url: 'the-world'}
-- {name: '$EAD', url: 'ead'}
-- {name: 'Journey', url: 'journey'}
-- {name: 'Map',       url: 'map'}
-- {name: 'Archives',      url: 'archives'}
-- {name: 'The Book',      url: 'book'}
+- {name: 'Home',      url: ''}
+- {name: 'AI Model',  url: 'ai-model'}
+- {name: 'BI Model',  url: 'bi-model'}
+- {name: 'Manifesto', url: 'manifesto'}
+- {name: 'The Book',  url: 'book'}
+- {name: 'World',     url: 'the-world'}
 
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+# World rail — the vertical index on the left edge of every page
+rail:
+- {name: 'Map',                 url: 'map'}
+- {name: 'Journey',             url: 'journey'}
+- {name: 'Growth & Discovery',  url: 'archives/growth-discovery'}
+- {name: '$EAD',                url: 'ead'}
+- {name: 'Archives',            url: 'archives'}
+
+# Footer links
 social:
-- {icon: 'twitter', link:    'https://twitter.com/eadwynworld'}
-- {icon: 'facebook', link:   'https://www.facebook.com/eadwynworld'}
-- {icon: 'instagram', link:  'https://instagram.com/eadwynworld'}
-- {icon: 'envelope', link:   'mailto:eadwynworld@gmail.com'}
-- {icon: 'rss-square', link: 'feed.xml'}
-# - {icon: 'rss-square', link: 'rss-feed.xml'}
+- {name: 'Twitter',   link: 'https://twitter.com/eadwynworld'}
+- {name: 'Facebook',  link: 'https://www.facebook.com/eadwynworld'}
+- {name: 'Instagram', link: 'https://instagram.com/eadwynworld'}
+- {name: 'Email',     link: 'mailto:eadwynworld@gmail.com'}
+- {name: 'RSS',       link: '/feed.xml'}
 
-# Customize site text
-pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
+# Call-to-action destinations. These point at the Contact page until the
+# real destinations exist — replace each with the live URL when it does.
+links:
+  buy_book:       '/contact'   # retailer page for The World of Eadwyn
+  download_book:  '/contact'   # free PDF / ePub download
+  ai_contribute:  '/contact'   # how to contribute / run a node
+  ai_source:      '/contact'   # AI Model source repository
 
 sharing_button_prompt: 'Feel free to share!'
 

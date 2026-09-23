@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="page-hero plain">
+  <svg class="deco" style="right:-120px;top:-60px;width:620px;height:400px;color:#123527;transform:rotate(-160deg) scaleX(-1)" aria-hidden="true"><use href="#frond" width="620" height="400"></use></svg>
+  <div class="copy wrap">
+    {% if page.eyebrow %}<span class="eb eb-teal">{{ page.eyebrow }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="archive-grid">
+    {% assign posts_in_order = site.posts | sort: 'date' %}
+    {% for post in posts_in_order %}
+      <a class="card {% cycle 'terr', 'terr2' %} archive-card" href="{{ site.github.url }}{{ post.url }}">
+        <i class="strip {% cycle 't', '' %}"></i>
+        {% if post.image %}<div class="art" style="background-image:url('{{ site.github.url }}/assets/img/{{ post.image }}')"></div>{% endif %}
+        <div class="body">
+          <span class="eb {% cycle 'eb-teal', 'eb-amber' %}">{{ post.categories | first }}</span>
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

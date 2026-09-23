@@ -1,0 +1,125 @@
+---
+layout: default
+title: World
+description: A living map of Eadwyn — Veymara, Eadwyn's journey, Growth & Discovery, $EAD and the Catalyst Pods, joined by root pathways.
+permalink: /the-world
+rail: Map
+---
+
+<section class="world" data-world>
+  <div class="world-stage">
+    <svg class="deco" style="left:-100px;bottom:-60px;width:640px;height:416px;color:#0f2b20" aria-hidden="true"><use href="#frond" width="640" height="416"></use></svg>
+    <svg class="deco" style="right:-100px;top:-80px;width:600px;height:390px;color:#123527;transform:rotate(-160deg) scaleX(-1)" aria-hidden="true"><use href="#frond" width="600" height="390"></use></svg>
+    <svg class="deco hide-sm" style="right:0;bottom:-20px;width:240px;height:252px;color:#1e4d3a;transform:rotate(-14deg)" aria-hidden="true"><use href="#monstera" width="240" height="252"></use></svg>
+    <svg class="deco drift" style="inset:0;width:100%;height:100%;color:rgba(94,231,222,.8)" aria-hidden="true"><use href="#spores" width="1440" height="1100"></use></svg>
+
+    <div class="world-title">
+      <span class="eb" style="color:var(--bone-3)">The World of Eadwyn</span>
+      <h1>A living map. Follow the roots.</h1>
+    </div>
+
+    <div class="world-map">
+      <div class="disc" role="img" aria-label="Map of Veymara, the floating metropolis"></div>
+      <svg class="paths" viewBox="0 0 880 880" fill="none" stroke-width="2" aria-hidden="true">
+        <path data-path="map journey" d="M250 260C350 180 450 180 530 210" stroke="#5ee7de" stroke-opacity=".55" stroke-dasharray="8 10"></path>
+        <path data-path="journey ead" d="M530 210c50 90 70 190 60 290" stroke="#5ee7de" stroke-opacity=".55" stroke-dasharray="8 10"></path>
+        <path data-path="map growth" d="M250 260c-40 140 10 280 50 380" stroke="#5ee7de" stroke-opacity=".55" stroke-dasharray="8 10"></path>
+        <path data-path="growth ead" d="M300 640c110-20 210-70 290-140" stroke="#5ee7de" stroke-opacity=".55" stroke-dasharray="8 10"></path>
+        <path data-path="ead pods" d="M590 500c-20 100-70 190-140 260" stroke="#f0b35a" stroke-opacity=".7" stroke-dasharray="4 8"></path>
+      </svg>
+
+      <button class="region left" type="button" data-region="map" style="left:28.4%;top:29.5%" aria-pressed="false">
+        <span class="node"></span>
+        <span class="lbl"><span class="eb eb-teal">Map</span><span class="sf">Veymara</span></span>
+      </button>
+      <button class="region" type="button" data-region="journey" style="left:60.2%;top:23.9%" aria-pressed="false">
+        <span class="node" style="animation-delay:1s"></span>
+        <span class="lbl"><span class="eb eb-teal">Journey</span><span class="sf">Eadwyn's path</span></span>
+      </button>
+      <button class="region" type="button" data-region="ead" style="left:67%;top:56.8%" aria-pressed="false">
+        <span class="node am" style="animation-delay:2s"></span>
+        <span class="lbl"><span class="eb eb-amber">$EAD</span><span class="sf">The currency of regeneration</span></span>
+      </button>
+      <button class="region left" type="button" data-region="growth" style="left:34%;top:72.7%" aria-pressed="false">
+        <span class="node bone" style="animation-delay:.5s"></span>
+        <span class="lbl"><span class="eb" style="color:var(--bone-2)">Growth &amp; Discovery</span><span class="sf">From perfection to resilience</span></span>
+      </button>
+      <button class="region" type="button" data-region="pods" style="left:51%;top:86.4%" aria-pressed="false">
+        <span class="node am sm" style="animation-delay:1.6s"></span>
+        <span class="lbl"><span class="eb eb-amber">Catalyst Pods</span><span class="sf">Seeds of the future</span></span>
+      </button>
+    </div>
+  </div>
+
+  <aside class="world-panel" aria-live="polite">
+    <div data-region-panel="map">
+      <span class="eb eb-teal">Region · Map</span>
+      <h2>Veymara</h2>
+      <p class="desc">A floating metropolis that integrates AI-driven architecture with organic structures, where knowledge, data, and decentralized governance shape the city's core.</p>
+      <a class="btn" href="{{ site.github.url }}/map">Enter the region</a>
+      <div class="connected">
+        <span class="eb eb-dim">Connected</span>
+        <a href="#journey" data-go="journey">→ Journey · Eadwyn's path</a>
+        <a href="#growth" data-go="growth">→ Growth &amp; Discovery</a>
+      </div>
+    </div>
+    <div data-region-panel="journey">
+      <span class="eb eb-teal">Region · Journey</span>
+      <h2>Eadwyn's path</h2>
+      <p class="desc">A contemplative innovator shaped by displacement and exclusion sets out to build a world where technology and nature no longer compete — and learns, through crisis, that resilience matters more than perfection.</p>
+      <a class="btn" href="{{ site.github.url }}/journey">Follow the journey</a>
+      <div class="connected">
+        <span class="eb eb-dim">Connected</span>
+        <a href="#map" data-go="map">→ Map · Veymara</a>
+        <a href="#ead" data-go="ead">→ $EAD · Council of Resonance</a>
+      </div>
+    </div>
+    <div data-region-panel="ead">
+      <span class="eb eb-amber">Region · $EAD</span>
+      <h2>The currency of regeneration</h2>
+      <p class="desc">The living currency born from the World of Eadwyn. Every token breathes, every trade regenerates, and every holder becomes a Catalyst shaping the next evolution of civilization.</p>
+      <a class="btn am" href="{{ site.github.url }}/ead">Explore $EAD</a>
+      <div class="connected">
+        <span class="eb eb-dim">Connected</span>
+        <a href="#pods" data-go="pods">→ Catalyst Pods</a>
+        <a href="#growth" data-go="growth">→ Growth &amp; Discovery</a>
+      </div>
+    </div>
+    <div data-region-panel="growth">
+      <span class="eb" style="color:var(--bone-2)">Region · Growth &amp; Discovery</span>
+      <h2>From perfection to resilience</h2>
+      <p class="desc">As grid failures and aquaponic collapses unravel the society Eadwyn helped build, denial gives way to doubt — and doubt to a deeper, more resilient understanding of sustainability.</p>
+      <a class="btn" href="{{ site.github.url }}/archives/growth-discovery">Read the chapter</a>
+      <div class="connected">
+        <span class="eb eb-dim">Connected</span>
+        <a href="#map" data-go="map">→ Map · Veymara</a>
+        <a href="#ead" data-go="ead">→ $EAD</a>
+      </div>
+    </div>
+    <div data-region-panel="pods">
+      <span class="eb eb-amber">Region · Catalyst Pods</span>
+      <h2>Seeds of the future</h2>
+      <p class="desc">Living structures where technology and nature grow together — part eco-lab, part data center, part creative incubator. Each Pod is a microcosm of the Eadwyn philosophy: regeneration through balance.</p>
+      <a class="btn am" href="{{ site.github.url }}/archives/catalyst-pods">Visit a Pod</a>
+      <div class="connected">
+        <span class="eb eb-dim">Connected</span>
+        <a href="#ead" data-go="ead">→ $EAD</a>
+        <a href="{{ site.github.url }}/bi-model">→ BI Model · living labs</a>
+      </div>
+    </div>
+  </aside>
+
+  {% assign posts_in_order = site.posts | sort: 'date' %}
+  <details class="archives-drawer">
+    <summary>
+      <span class="eb" style="color:var(--bone-2)">Archives · {{ site.posts.size }} entries</span>
+      <span class="titles">{% for post in posts_in_order %}{{ post.title }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+      <span class="eb eb-teal open-lbl"></span>
+    </summary>
+    <div class="drawer-list">
+      {% for post in posts_in_order %}
+        <a href="{{ site.github.url }}{{ post.url }}"><span class="eb eb-dim" style="font-size:11px">{{ post.categories | first }}</span><br><span class="sf" style="font-size:20px">{{ post.title }}</span></a>
+      {% endfor %}
+    </div>
+  </details>
+</section>

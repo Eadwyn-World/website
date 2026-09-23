@@ -2,9 +2,10 @@
 layout: post
 title: "Localized Economy"
 author: "Eadwyn"
-categories: resources
-tags: [documentation,sample]
+categories: Economy
+tags: [eadwyn]
 image: Localized-Economy.png
+permalink: /archives/localized-economy
 ---
 
 The "Localized Economy" section of *The World of Eadwyn* introduces a radical rethinking of economic systems in Eadwyn’s world, where global trade and sprawling supply chains are replaced by self-sustaining, community-driven economies. This shift prioritizes sustainability, self-reliance, and deep interconnectedness between people, technology, and the environment, forming the backbone of a society that values collaboration over competition.
